@@ -3,6 +3,8 @@
 While running game code:
   File "renpy/common/00start.rpy", line 189, in script
     python:
+  File "renpy/common/00start.rpy", line 189, in script
+    python:
   File "renpy/common/00start.rpy", line 190, in <module>
     renpy.execute_default_statement(True)
 Exception: store.quick_menu is being given a default a second time.
@@ -10,6 +12,17 @@ Exception: store.quick_menu is being given a default a second time.
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
+  File "C:\Users\Lari\Desktop\RENPY\renpy-8.1.0-sdk\renpy\bootstrap.py", line 275, in bootstrap
+    renpy.main.main()
+  File "C:\Users\Lari\Desktop\RENPY\renpy-8.1.0-sdk\renpy\main.py", line 670, in main
+    run(restart)
+  File "C:\Users\Lari\Desktop\RENPY\renpy-8.1.0-sdk\renpy\main.py", line 144, in run
+    renpy.execution.run_context(True)
+  File "C:\Users\Lari\Desktop\RENPY\renpy-8.1.0-sdk\renpy\execution.py", line 942, in run_context
+    context.run()
+  File "renpy/common/00start.rpy", line 189, in script
+    python:
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/site-packages/future/utils/__init__.py", line 444, in raise_
   File "renpy/common/00start.rpy", line 189, in script
     python:
   File "C:\Users\Lari\Desktop\RENPY\renpy-8.1.0-sdk\renpy\ast.py", line 1138, in execute
@@ -26,4 +39,4 @@ Exception: store.quick_menu is being given a default a second time.
 Windows-10-10.0.22631 AMD64
 Ren'Py 8.1.0.23051307
 Library Repo 1.0
-Sat May  4 16:48:54 2024
+Sat May  4 16:47:16 2024
