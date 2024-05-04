@@ -1,0 +1,29 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "renpy/common/00start.rpy", line 189, in script
+    python:
+  File "renpy/common/00start.rpy", line 190, in <module>
+    renpy.execute_default_statement(True)
+Exception: store.quick_menu is being given a default a second time.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "renpy/common/00start.rpy", line 189, in script
+    python:
+  File "C:\Users\Lari\Desktop\RENPY\renpy-8.1.0-sdk\renpy\ast.py", line 1138, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\Lari\Desktop\RENPY\renpy-8.1.0-sdk\renpy\python.py", line 1122, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/00start.rpy", line 190, in <module>
+    renpy.execute_default_statement(True)
+  File "C:\Users\Lari\Desktop\RENPY\renpy-8.1.0-sdk\renpy\exports.py", line 3963, in execute_default_statement
+    i.execute_default(start)
+  File "game/screens_screens.rpyc", line 267, in execute_default
+Exception: store.quick_menu is being given a default a second time.
+
+Windows-10-10.0.22631 AMD64
+Ren'Py 8.1.0.23051307
+Library Repo 1.0
+Sat May  4 16:48:54 2024
