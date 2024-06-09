@@ -24,7 +24,13 @@ label start:
 
     # These display lines of dialogue.
 
+    $ light = "forestday"
+    $ renpy.pause(0.5)
+    $ light = "forestnight"
+
     e "You've created a new Ren'Py game."
+
+    $ light = "rainnight"
 
     e "Once you add a story, pictures, and music, you can release it to the world!"
 
