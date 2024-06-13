@@ -97,8 +97,10 @@ style frame:
 
 screen say(who, what):
     style_prefix "say"
+    zorder 42
 
     window:
+    
         id "window"
 
         if who is not None:

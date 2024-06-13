@@ -1,6 +1,6 @@
 screen light():
 
-    zorder 100
+    zorder 10
 
     if light == "forestday":
         add "light/light_day_forest.png"
